@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bgomes.mathgame.SelectGameFragment" >
+
+    <TextView
+        android:id="@+id/userNameLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/userNameLabel" />
+    
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/multiplyButton"
+        android:layout_alignBottom="@+id/multiplyButton"
+        android:layout_alignRight="@+id/userNameEditText"
+        android:text="@string/divideButtonLabel"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignRight="@+id/userNameEditText"
+        android:text="@string/subtractButtonLabel"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addButton"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/multiplyButtonLabel"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/multiplyButton"
+        android:layout_below="@+id/userNameEditText"
+        android:layout_marginTop="46dp"
+        android:text="@string/addButtonLabel"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userNameLabelTextView"
+        android:layout_alignBottom="@+id/userNameLabelTextView"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/userNameLabelTextView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/userName" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

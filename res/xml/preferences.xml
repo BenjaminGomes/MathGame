@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference 
+        android:key="pref_convtype"
+        android:title="@string/themetype_title"
+        android:summary="@string/themetype_summary"
+        android:dialogTitle="@string/themetype_title"
+        android:entries="@array/themetype_keys"
+        android:entryValues="@array/themetype_values"
+        android:defaultValue="@string/themetype_default" />
+
+</PreferenceScreen>

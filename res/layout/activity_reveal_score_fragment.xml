@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bgomes.mathgame.RevealScoreFragment" >
+
+    <TextView
+        android:id="@+id/userScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userScoreLabelTextView"
+        android:layout_alignBottom="@+id/userScoreLabelTextView"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/userScoreLabelTextView"
+        android:text="@string/userScore"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/congratsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/congrats"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/userName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/userScoreLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/userScoreLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/wrongAnswersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wrongAnswersLabelTextView"
+        android:layout_alignBottom="@+id/wrongAnswersLabelTextView"
+        android:layout_alignLeft="@+id/correctAnswersTextView"
+        android:text="@string/wrongAnswers"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/wrongAnswersLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/correctAnswersLabelTextView"
+        android:layout_below="@+id/correctAnswersLabelTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/wrongAnswersLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrongAnswersLabelTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/highScore"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:id="@+id/correctAnswersLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userScoreTextView"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/correctAnswersTextView"
+        android:text="@string/correctAnswersLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/correctAnswersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/correctAnswersLabelTextView"
+        android:layout_alignBottom="@+id/correctAnswersLabelTextView"
+        android:layout_alignLeft="@+id/userScoreTextView"
+        android:text="@string/correctAnswers"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TableLayout
+        android:id="@+id/highScoreTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/highScoreTableTitleTextView"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/highScoreTableTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highScoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#909090"
+        android:gravity="center"
+        android:text="@string/highScoreTableTop5Title" />
+
+</RelativeLayout>
